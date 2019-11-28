@@ -15,7 +15,7 @@ for the download.
 Please note that IC-Barcode is proprietary and only runs with a TIS camera
 connected to your computer (however it then accepts images from any source).
 
-Note that you could run all modern cameras of TIS inside ROS using `camera_aravis`.
+Also note that you could run all modern cameras of TIS inside ROS using `camera_aravis`.
 
 Requirements
 ------------
@@ -33,7 +33,7 @@ node version `IcBarcodeScannerNode` with the same functionality. The nodelet/nod
 only subscribes to the image input on demand, i.e. if somebody listens to a barcode
 topic.
 
-###Parameters
+**Parameters**
 *   `~barcode_formats` (`integer`, default `ICBarcode_Format::IC_BARCODEFORMAT_ALL`)
 
     A bitmask which defines what barcode formats we are looking for. See `enum ICBarcode_Format`
@@ -50,10 +50,10 @@ topic.
 
     e.g. ICBarcode_Param::IC_BARCODEPARAMS_ORIENTATION becomes `~orientation` (`integer`)
 
-###Received Topics
+**Received Topics**
 *   `~image` (`sensor_msgs/Image`)
 
-###Published Topics
+**Published Topics**
 *   `~barcodes` (`ic_barcode_scanner/IcBarcodeResults`)
 
     Detections of barcodes. It contains positions as well as the carried information.
@@ -62,7 +62,7 @@ topic.
 
     Barcode positions drawn as boundaries on the original `Image`.
 
-###Service
+**Services**
 *   `find_barcodes`
 
     `Request`: `sensor_msgs/Image`
