@@ -1,0 +1,7 @@
+<library path="lib/libic_barcode_scanner">
+  <class name="ic_barcode_scanner/IcBarcodeScannerNodelet" type="ic_barcode_scanner::IcBarcodeScannerNodelet" base_class_type="nodelet::Nodelet">
+  <description>
+    The IC-Barcode-Scanner nodelet.
+  </description>
+  </class>
+</library>

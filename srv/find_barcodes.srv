@@ -1,0 +1,5 @@
+# scan a single image for barcodes
+
+sensor_msgs/Image                     image
+---
+ic_barcode_scanner/IcBarcodeResults   barcodes

@@ -1,0 +1,16 @@
+ /**
+\mainpage
+
+\b ic_barcode_scanner provides a wrapper nodelet/node to the IC-Barcode library
+of \i {The Imaging Source} (TIS).
+
+See https://www.theimagingsource.com/support/documentation/ic-barcode/ for the
+API documentation of IC-Barcode and 
+https://www.theimagingsource.com/support/downloads-for-linux/install/tisicbarcode/
+for the download.
+
+Please note that IC-Barcode is proprietary and only runs with a TIS camera
+connected to your computer (however it then accepts images from any source).
+
+
+*/

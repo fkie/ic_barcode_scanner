@@ -1,0 +1,33 @@
+<package format="2">
+  <name>ic_barcode_scanner</name>
+  <version>1.0.0</version>
+  <description>ic_barcode_scanner: a ROS wrapper to apply IC-Barcode scanner from The Imaging Source.</description>
+
+  <maintainer email="dominik.klein@fkie.fraunhofer.de">Dominik A. Klein, Fraunhofer FKIE</maintainer>
+  <author email="dominik.klein@fkie.fraunhofer.de">Dominik A. Klein, Fraunhofer FKIE</author>
+
+  <license>Apache-2.0</license>
+
+  <url type="website">http://www.ros.org/wiki/ic_barcode_scanner</url>
+  <url type="website">https://www.theimagingsource.com/support/downloads-for-linux/install/tisicbarcode/</url>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <depend>roscpp</depend>
+  <depend>nodelet</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>image_transport</depend>
+  <depend>cv_bridge</depend>
+  <depend>dynamic_reconfigure</depend>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  
+  <export>
+    <nodelet plugin="${prefix}/nodelet_plugins.xml" />
+    <rosdoc config="rosdoc.yaml" />
+  </export>
+  
+</package>
